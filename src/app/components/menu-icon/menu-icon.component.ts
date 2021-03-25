@@ -9,7 +9,7 @@ import {MainService} from '../../service/main-service.service';
   styleUrls: ['./menu-icon.component.scss']
 })
 export class MenuIconComponent implements OnInit {
-  isMenuOpen: boolean = false;
+  isMenuOpen = false;
   constructor(private router: Router, private mainService: MainService) { }
 
   ngOnInit(): void {

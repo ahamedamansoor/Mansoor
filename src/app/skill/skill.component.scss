@@ -1,0 +1,78 @@
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/animation";
+
+
+.content-div {
+  @include position(absolute, 6%, auto, auto, 3%);
+}
+
+.chart {
+  @include width-height(45%, 30%);
+  min-width: 30rem;
+  @include position(absolute, 25%, auto, auto, 15%);
+}
+
+
+.nav {
+  @include width-height(30%, 100vh);
+  @include position(absolute, 0, 0);
+  animation: image-container 0.7s;
+  background-color: #4830e6;
+  .skill-pro{
+    @include position(absolute,13%,3%);
+    animation: my-info 1s 0.6s both;
+    width: 85%;
+    p{
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+      font-family: "Californian FB";
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      li{
+        display: inline;
+        padding: 5px 15px;
+        font-family: Georgia;
+        margin: 10px 5px;
+        border-radius: 5px;
+        background-color: white;
+      }
+    }
+  }
+  .skill-fam{
+    @include position(absolute,auto,3%,15%);
+    animation: my-info 1s 1s both;
+    width: 85%;
+    p{
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+      font-family: "Californian FB";
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      li{
+        display: inline;
+        padding: 5px 15px;
+        font-family: Georgia;
+        margin: 10px 5px;
+        border-radius: 5px;
+        background-color: white;
+      }
+    }
+  }
+
+  .img1 {
+    @include position(absolute, auto, 4%, 2%);
+    @include width-height(90%, auto, 10rem);
+    animation: 55s ease 4s infinite alternate running image1;
+    opacity: 0.2;
+  }
+}

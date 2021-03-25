@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MenuIconComponent } from './components/menu-icon/menu-icon.component';
 import { AboutComponent } from './about/about.component';
 import {CommonModule} from '@angular/common';
+import { SkillComponent } from './skill/skill.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {CommonModule} from '@angular/common';
     MenuComponent,
     MenuIconComponent,
     AboutComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,

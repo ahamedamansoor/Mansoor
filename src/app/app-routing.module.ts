@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {AboutComponent} from './about/about.component';
+import {SkillComponent} from './skill/skill.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,9 @@ const routes: Routes = [
   },
   {
     path: 'about', component: AboutComponent
+  },
+  {
+    path: 'skill', component: SkillComponent
   },
   {
     path: 'main-menu',

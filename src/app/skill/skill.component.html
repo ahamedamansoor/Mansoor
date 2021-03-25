@@ -1,0 +1,25 @@
+<div class="chart">
+  <canvas id="myChart"></canvas>
+</div>
+
+<div class="content-div">
+  <app-menu-icon></app-menu-icon>
+</div>
+
+
+
+<div class="nav">
+  <div class="skill-pro">
+    <p>Proficient skills</p>
+    <ul>
+      <li *ngFor="let pro of proList">{{pro}}</li>
+    </ul>
+  </div>
+  <div class="skill-fam">
+    <p>Familiar skills</p>
+    <ul>
+      <li *ngFor="let fam of famList">{{fam}}</li>
+    </ul>
+  </div>
+<!--  <img class="img1" src="./assets/images/particle-large-grey.svg" alt="-large-grey-bar">-->
+</div>
