@@ -1,0 +1,150 @@
+{
+  "Progress": [
+    {
+      "label": "HTML 5",
+      "percent": "90%",
+      "value": "18rem"
+    },
+    {
+      "label": "CSS 3 / SCSS",
+      "percent": "90%",
+      "value": "18rem"
+    },
+    {
+      "label": "JavaScript",
+      "percent": "80%",
+      "value": "16rem"
+    },
+    {
+      "label": "Boostrap",
+      "percent": "85%",
+      "value": "17rem"
+    },
+    {
+      "label": "Angular",
+      "percent": "85%",
+      "value": "17rem"
+    },
+    {
+      "label": "NodeJS",
+      "percent": "65%",
+      "value": "13rem"
+    }
+  ],
+  "sideNavList" : [
+  {
+    "label": "Home",
+    "value": "home-container"
+  },
+    {
+      "label": "About",
+      "value": "about-container"
+    },
+    {
+      "label": "Skills",
+      "value": "skill-container"
+    },
+    {
+      "label": "Education",
+      "value": "edu-container"
+    },
+    {
+      "label": "Experience",
+      "value": "exp-container"
+    },
+    {
+      "label": "Personal Details",
+      "value": "personal-container"
+    }
+],
+  "About": [
+    {
+      "label": "Name",
+      "value": "Ahamed A Mansoor"
+    },
+    {
+      "label": "Date of Birth",
+      "value": "31 / 01 / 1996"
+    },
+    {
+      "label": "Email",
+      "value": "ahamedamansoor@gmail.com"
+    },
+    {
+      "label": "Phone",
+      "value": "+91 - 7010932552"
+    },
+    {
+      "label": "Marital Status",
+      "value": "Unmarried"
+    },
+    {
+      "label": "Location",
+      "value": "Bengaluru"
+    },
+    {
+      "label": "Current Company",
+      "value": "Infrrd.ai"
+    },
+    {
+      "label": "Designation",
+      "value": "Software Developer"
+    }
+  ],
+  "chart1": {
+    "labels": [
+      "HTML",
+      "SCSS",
+      "Js",
+      "Bootstrap",
+      "Angular",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Git",
+      "Photoshop"
+    ],
+    "datasets": [
+      {
+        "label": "Skillset",
+        "data": [
+          90,
+          90,
+          80,
+          85,
+          85,
+          65,
+          75,
+          80,
+          80,
+          65,
+          0,
+          100
+        ],
+        "backgroundColor": [
+          "rgba(21,129,215,0.8)",
+          "rgba(215,12,238,0.8)",
+          "rgba(22,224,142,0.8)",
+          "rgba(21,129,215,0.8)",
+          "rgba(215,12,238,0.8)",
+          "rgba(22,224,142,0.8)",
+          "rgba(21,129,215,0.8)",
+          "rgba(215,12,238,0.8)",
+          "rgba(22,224,142,0.8)",
+          "rgba(21,129,215,0.8)"
+        ],
+        "hoverBackgroundColor": [
+          "rgba(21,129,215,0.5)",
+          "rgba(215,12,238,0.5)",
+          "rgba(22,224,142,0.5)",
+          "rgba(21,129,215,0.5)",
+          "rgba(215,12,238,0.5)",
+          "rgba(22,224,142,0.5)",
+          "rgba(21,129,215,0.5)",
+          "rgba(215,12,238,0.5)",
+          "rgba(22,224,142,0.5)",
+          "rgba(21,129,215,0.5)"
+        ]
+      }]
+    }
+}

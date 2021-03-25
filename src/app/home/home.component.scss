@@ -1,0 +1,178 @@
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/animation";
+
+
+.home-container {
+  //background: linear-gradient(to right,white 70%,#766dff 30%);
+  @include width-height(99%, 100vh);
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  .float-images {
+    z-index: -10;
+
+    .img2 {
+      opacity: 0.2;
+      @include position(absolute, -41%, auto, auto, -3%);
+      @include width-height(20%, 50rem, 10rem);
+      animation: 15s ease-in-out infinite alternate running image2;
+    }
+
+    .img3 {
+      @include position(absolute, 4%, 25%);
+      animation: 15s ease-in-out infinite alternate running image3;
+      opacity: 0.6;
+    }
+
+    .img4 {
+      @include position(absolute, auto, auto, 10%, 20%);
+      animation: 55s ease infinite alternate running image4;
+      opacity: 0.6;
+    }
+  }
+
+  .content {
+    .content-div {
+      @include position(absolute, 6%, auto, auto, 3%);
+
+
+      .content-1 {
+        font-family: Georgia;
+        font-size: 28px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        color: blue;
+      }
+
+      .content-2 {
+        @include width-height(25px, 1px);
+        background: black;
+        transition: 0.5s;
+      }
+    }
+
+    .content-div:hover .content-2 {
+      @include width-height(100%, 1px);
+      background: blue;
+    }
+
+    .content-info {
+      @include position(absolute, 40%, auto, auto, 15%);
+     animation: my-info 2s 2s both;
+      p {
+        margin-bottom: 40px;
+        font-family: Georgia;
+      }
+
+      .content-0 {
+        font-size: 20px;
+        font-family: Georgia;
+      }
+
+      .content-1 {
+        font-size: 45px;
+        color: blue;
+      }
+
+      .content-2 {
+        font-size: 25px;
+        margin-bottom: 100px;
+        font-family: Georgia;
+      }
+
+      .content-3 {
+        cursor: pointer;
+        font-family: monospace;
+        margin-bottom: 0;
+
+        #content-3-arrow {
+          animation: 0.9s ease infinite both running arrow;
+          font-size: 20px;
+          margin-left: 15px;
+          position: absolute;
+          transform: rotateZ(90deg) translateX(-5px);
+        }
+      }
+    }
+  }
+}
+
+
+.nav {
+  @include width-height(30%, 100vh);
+  @include position(absolute, 0, 0);
+  animation: image-container 0.7s;
+  background-color: #4830e6;
+
+  .img1 {
+    @include position(absolute, auto, 4%, 2%);
+    @include width-height(90%, auto, 10rem);
+    animation: 55s ease 4s infinite alternate running image1;
+    opacity: 0.2;
+  }
+}
+
+.backdrop {
+  @include width-height(25%, 75vh);
+  @include position(absolute, 13%, 13%);
+  animation: backdrop 1s 0.5s both;
+  visibility: visible;
+  background-color: lightgray;
+}
+
+.image {
+  @include width-height(25%, 75vh);
+  @include position(absolute, 13%, 13%);
+  animation: profile-image 0.7s 1s both;
+  visibility: hidden;
+  background-image: url('../../assets/images/creed1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: invert(blue, 100%);
+}
+
+.image-dot {
+  @include width-height(30%, 66vh);
+  @include position(absolute, 29%, 14%);
+  z-index: -1;
+  animation: dot-image 0.7s 1.5s both;
+  background-image: url('../../assets/images/bluedot1.svg');
+  background-repeat: repeat;
+  background-size: 25px 25px;
+  filter: brightness(3);
+  background-position: center;
+}
+
+agm-map {
+  width: 300px;
+  height: 300px;
+}
+
+.content-container {
+  .content-div {
+    @include position(absolute, 6%, 3%);
+
+    .content-1 {
+      font-family: Dyuthi;
+      font-size: 28px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      color: blue;
+    }
+
+    .content-2 {
+      @include width-height(25px, 1px);
+      background: black;
+      transition: 0.5s;
+      float: right;
+    }
+  }
+
+  .content-div:hover .content-2 {
+    @include width-height(100%, 1px);
+    background: blue;
+  }
+}
+
+
+

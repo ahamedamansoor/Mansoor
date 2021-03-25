@@ -1,0 +1,7 @@
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/animation";
+
+
+  .content-div {
+    @include position(absolute, 6%, auto, auto, 3%);
+  }
