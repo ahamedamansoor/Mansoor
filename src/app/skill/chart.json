@@ -26,6 +26,16 @@
           100
         ],
         "backgroundColor": [
+          "rgba(21,129,215)",
+          "rgba(215,12,238)",
+          "rgba(22,224,142)",
+          "rgba(21,129,215)",
+          "rgba(215,12,238)",
+          "rgba(22,224,142)",
+          "rgba(21,129,215)",
+          "rgba(215,12,238)"
+        ],
+        "hoverBackgroundColor": [
           "rgba(21,129,215,0.8)",
           "rgba(215,12,238,0.8)",
           "rgba(22,224,142,0.8)",
@@ -34,21 +44,11 @@
           "rgba(22,224,142,0.8)",
           "rgba(21,129,215,0.8)",
           "rgba(215,12,238,0.8)"
-        ],
-        "hoverBackgroundColor": [
-          "rgba(21,129,215,0.5)",
-          "rgba(215,12,238,0.5)",
-          "rgba(22,224,142,0.5)",
-          "rgba(21,129,215,0.5)",
-          "rgba(215,12,238,0.5)",
-          "rgba(22,224,142,0.5)",
-          "rgba(21,129,215,0.5)",
-          "rgba(215,12,238,0.5)"
         ]
       }]
   },
   "proficient": [
-    "Html","Css/Scss","javaScript(ES6)","TypeScript","Angular 2+","Bootstrap","Data Structure and Algorithm", "Git", "Rest", "Rxjs"
+    "Html5","Css3/Scss","javaScript(ES6)","TypeScript","Angular 2+","Bootstrap","Data Structure and Algorithm", "Git", "Rest", "Rxjs"
   ],
   "Familiar": ["Ngrx/Store","Node JS","Express JS", "FireBase","Linux","Angular Material","Photoshop","MongoDB"]
 }

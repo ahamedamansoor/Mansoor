@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
    this.navData = data.navData;
    this.mainService.isMenuOpen.subscribe(data => {
-     console.log(data);
      this.isMenuOpen = data;
     });
   }

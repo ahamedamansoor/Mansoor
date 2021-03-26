@@ -31,6 +31,21 @@
     }
   }
 
+  .button{
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #4830e6;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-family: Bahnschrift Light;
+    @include position(absolute, auto, auto,25%,18%);
+    animation: main-button 1s 3s both;
+    &:hover{
+      background-color: #0a0ab3;
+    }
+  }
+
   .content {
     .content-div {
       @include position(absolute, 6%, auto, auto, 3%);
@@ -61,7 +76,7 @@
     }
 
     .content-info {
-      @include position(absolute, 40%, auto, auto, 17%);
+      @include position(absolute, 29%, auto, auto, 18%);
      animation: my-info 2s 2s both;
       p {
         margin-bottom: 40px;

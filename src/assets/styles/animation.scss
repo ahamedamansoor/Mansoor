@@ -168,6 +168,15 @@ from{
  }
 }
 
+@keyframes main-button {
+from{
+  transform: translateY(400px);
+}
+  to{
+    transform: translateY(0px);
+  }
+}
+
 @mixin max-width-900() {
   @media only screen and (max-width: 900px) {
     @content

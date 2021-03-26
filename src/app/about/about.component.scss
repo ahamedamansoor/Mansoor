@@ -22,8 +22,8 @@
 }
 
 .summary{
-  width: 40vw;
-  height: 20vw;
+  z-index: 1;
+  @include width-height(40vw,20vh);
   @include position(absolute, 15%, auto,auto,13%);
   font-family: Bahnschrift Light;
   font-weight: bold;
