@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.navigate([{outlets: { menu: null } }],{skipLocationChange: true});
+    // this.router.navigate([{outlets: { menu: null } }],{skipLocationChange: true});
     this.progessValue = progress.Progress;
     this.sideNavList = progress.sideNavList;
     this.aboutInfo = progress.About;

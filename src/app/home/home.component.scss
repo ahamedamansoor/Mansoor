@@ -51,13 +51,17 @@
       }
     }
 
+    .main-nav{
+      @include position(absolute, 25%, auto, auto, 1.5%);
+    }
+
     .content-div:hover .content-2 {
       @include width-height(100%, 1px);
       background: blue;
     }
 
     .content-info {
-      @include position(absolute, 40%, auto, auto, 15%);
+      @include position(absolute, 40%, auto, auto, 17%);
      animation: my-info 2s 2s both;
       p {
         margin-bottom: 40px;
@@ -67,31 +71,20 @@
       .content-0 {
         font-size: 20px;
         font-family: Georgia;
+        font-family: Bahnschrift Light;
       }
 
       .content-1 {
         font-size: 45px;
         color: blue;
+        font-family: Bahnschrift SemiBold;
       }
 
       .content-2 {
         font-size: 25px;
         margin-bottom: 100px;
         font-family: Georgia;
-      }
-
-      .content-3 {
-        cursor: pointer;
-        font-family: monospace;
-        margin-bottom: 0;
-
-        #content-3-arrow {
-          animation: 0.9s ease infinite both running arrow;
-          font-size: 20px;
-          margin-left: 15px;
-          position: absolute;
-          transform: rotateZ(90deg) translateX(-5px);
-        }
+        font-family: Bahnschrift Light;
       }
     }
   }

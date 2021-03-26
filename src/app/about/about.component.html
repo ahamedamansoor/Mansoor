@@ -1,3 +1,23 @@
 <div class="content-div">
-<app-menu-icon></app-menu-icon>
+  <app-menu-icon></app-menu-icon>
 </div>
+<div class="main-nav">
+  <app-menu></app-menu>
+</div>
+
+<div class="summary">
+  <div class="about">
+     <p>Dynamic young professional with 1 year 3 months of experience (incl. 3 months Internship) in Software Industry , Skilled at Technical leadership, Communication and Presentations,
+       Experienced in full product life cycle from design to implementation</p>
+  </div>
+  <div>
+ <ul>
+   <li [id]="'point'+i" *ngFor="let data of summary;let i = index"><span>&#10003;</span>{{data.point}}</li>
+ </ul>
+  </div>
+</div>
+
+<div class="about-img">
+<img src="../../assets/images/home-right.webp" alt="home">
+</div>
+<div class="blue-dec"></div>

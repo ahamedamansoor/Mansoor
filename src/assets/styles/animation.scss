@@ -142,11 +142,30 @@
 
 @keyframes arrow {
   from {
-    transform: translateY(0px) rotateZ(90deg);
+    transform: translateX(-100px);
   }
   to {
-    transform: translateY(-10px) rotateZ(90deg);
+    transform: translateX(0px);
   }
+}
+
+@keyframes pointScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes aboutImg {
+from{
+  transform: translateX(100px);
+  opacity: 0.1;
+}to{
+  transform: translateX(0px);
+ opacity: 1;
+ }
 }
 
 @mixin max-width-900() {

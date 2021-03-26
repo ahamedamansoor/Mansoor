@@ -1,6 +1,8 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import { Router} from '@angular/router';
 import {MainService} from '../../service/main-service.service';
+// @ts-ignore
+import data from './menu.json';
 
 @Component({
   selector: 'app-menu',
@@ -9,11 +11,17 @@ import {MainService} from '../../service/main-service.service';
 })
 export class MenuComponent implements OnInit, AfterViewInit {
 
+  navData = [];
+  isMenuOpen: boolean;
   constructor(private router: Router,
               private mainService: MainService) { }
 
   ngOnInit(): void {
-
+   this.navData = data.navData;
+   this.mainService.isMenuOpen.subscribe(data => {
+     console.log(data);
+     this.isMenuOpen = data;
+    });
   }
 
   ngAfterViewInit() {
@@ -21,9 +29,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
   }
 
   closeMenu(route) {
-    this.mainService.isMenuOpen.next(true);
-    this.router.navigate([{outlets: {menu: null}}]).then(data => {
-      this.router.navigate([route]);
-    })
+    this.mainService.isMenuOpen.next(false);
+    this.router.navigate([route]);
   }
 }

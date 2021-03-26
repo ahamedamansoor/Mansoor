@@ -1,0 +1,29 @@
+{
+  "navData": [
+    {
+      "name": "Home",
+      "route": "/home",
+      "imageUrl": "./assets/images/Home.svg"
+    },
+    {
+      "name": "Executive Summary",
+      "route": "/about",
+      "imageUrl": "./assets/images/About.svg"
+    },
+    {
+      "name": "Skills",
+      "route": "/skill",
+      "imageUrl": "./assets/images/Skill.svg"
+    },
+    {
+      "name": "Experience",
+      "route": "/exp",
+      "imageUrl": "./assets/images/Experience.svg"
+    },
+    {
+      "name": "Project",
+      "route": "/project",
+      "imageUrl": "./assets/images/Project.svg"
+    }
+  ]
+}

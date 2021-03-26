@@ -2,6 +2,67 @@
 @import "src/assets/styles/animation";
 
 
-  .content-div {
-    @include position(absolute, 6%, auto, auto, 3%);
+.content-div {
+  @include position(absolute, 6%, auto, auto, 3%);
+}
+
+.main-nav {
+  @include position(absolute, 25%, auto, auto, 1.5%);
+}
+
+.about-img {
+  @include position(absolute, 20%, 1%);
+  animation: aboutImg 1s both;
+  z-index: 1;
+
+  img {
+    height: 70vh;
+    width:  40vw;
   }
+}
+
+.summary{
+  width: 40vw;
+  height: 20vw;
+  @include position(absolute, 15%, auto,auto,13%);
+  font-family: Bahnschrift Light;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  .about{
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: Bahnschrift SemiBold;
+    background-color: #4830e6;
+    color: white;
+  }
+  ul{
+    margin-top: 100px;
+    list-style-type: none;
+    span{
+      padding-right: 10px;
+    }
+    li{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.blue-dec {
+  @include width-height(60vw, 70vh);
+  @include position(absolute, -2%, -30%);
+  transform: rotateZ(45deg);
+  background-color: #4830e6;
+}
+
+#point0{
+ animation: pointScale 1s 0.4s both;
+}#point1{
+ animation: pointScale 1s 0.6s both;
+}#point2{
+ animation: pointScale 1s 0.8s both;
+}#point3{
+ animation: pointScale 1s 1s both;
+}

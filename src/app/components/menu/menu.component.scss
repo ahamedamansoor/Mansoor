@@ -1,4 +1,4 @@
-.menu{
+.menu {
   transition: 5s;
   height: 25rem;
   width: 5rem;
@@ -10,18 +10,34 @@
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
-  img{
+
+  img {
     padding: 10px;
     height: 3rem;
     width: 3rem;
     border-radius: 10px;
     transition: 0.5s;
   }
-  img:hover{
+
+  img:hover {
     background-color: #4830e6;
   }
-  .active{
+
+  .active {
     color: blue;
   }
+}
+
+
+#a0{
+  animation: arrow 0.3s 0.1s both;
+}#a1{
+  animation: arrow 0.3s 0.2s both;
+}#a2{
+  animation: arrow 0.3s 0.3s both;
+}#a3{
+  animation: arrow 0.3s 0.4s both;
+}#a4{
+  animation: arrow 0.3s 0.5s both;
 }
 

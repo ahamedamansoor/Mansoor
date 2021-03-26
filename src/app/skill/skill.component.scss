@@ -6,6 +6,11 @@
   @include position(absolute, 6%, auto, auto, 3%);
 }
 
+.main-nav {
+  @include position(absolute, 25%, auto, auto, 1.5%);
+}
+
+
 .chart {
   @include width-height(45%, 30%);
   min-width: 30rem;
@@ -27,7 +32,7 @@
       margin-bottom: 30px;
       text-align: center;
       color: white;
-      font-family: "Californian FB";
+      font-family: Bahnschrift SemiBold;
     }
     ul{
       display: flex;
@@ -36,7 +41,7 @@
       li{
         display: inline;
         padding: 5px 15px;
-        font-family: Georgia;
+        font-family:Bahnschrift SemiBold;
         margin: 10px 5px;
         border-radius: 5px;
         background-color: white;
@@ -52,7 +57,7 @@
       margin-bottom: 30px;
       text-align: center;
       color: white;
-      font-family: "Californian FB";
+      font-family: Bahnschrift SemiBold;
     }
     ul{
       display: flex;
@@ -61,7 +66,7 @@
       li{
         display: inline;
         padding: 5px 15px;
-        font-family: Georgia;
+        font-family:Bahnschrift SemiBold;
         margin: 10px 5px;
         border-radius: 5px;
         background-color: white;

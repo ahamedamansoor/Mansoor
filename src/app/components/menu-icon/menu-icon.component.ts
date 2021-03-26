@@ -17,14 +17,14 @@ export class MenuIconComponent implements OnInit {
 
 
   OnMenuClick(data){
-    this.mainService.isMenuOpen.next(this.isMenuOpen);
+    this.mainService.isMenuOpen.next(!this.isMenuOpen);
     this.mainService.isMenuOpen.subscribe(data => {
-      this.isMenuOpen = !data;
-      if(data){
-        this.router.navigate([{outlets: { menu: null } }]);
-      } else {
-        this.router.navigate([{ outlets: { menu: ['main-menu'] } }],{skipLocationChange: true});
-      }
+      this.isMenuOpen = data;
+      // if(data){
+      //   this.router.navigate([{outlets: { menu: null } }]);
+      // } else {
+      //   this.router.navigate([{ outlets: { menu: ['main-menu'] } }],{skipLocationChange: true});
+      // }
     });
   }
 
